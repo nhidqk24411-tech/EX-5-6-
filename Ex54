@@ -18,9 +18,9 @@
                 } else if (buttonName === "Min") {
                     result = Math.min(a, b, c);
                 } else if (buttonName === "sin(a)") {
-                    result = Math.sin(a);
+                    result = Math.sin(a * Math.PI / 180);
                 } else if (buttonName === "cos(a)") {
-                    result = Math.cos(a);
+                    result = Math.cos(a * Math.PI / 180);
                 } else if (buttonName === "a^b") {
                     result = Math.pow(a, b);
                 }
