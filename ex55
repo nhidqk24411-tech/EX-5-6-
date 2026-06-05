@@ -42,6 +42,7 @@
     <body>
         <form name="myform">
             <table border="1" style="text-align: center;">
+                <th colspan="2" style="text-align: center; background-color: #50b6e5;">The quadratic equation </th>
                 <tr>
                     <td>a:</td>
                     <td><input type="text" name="a"></td>
