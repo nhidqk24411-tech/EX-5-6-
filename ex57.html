@@ -3,6 +3,27 @@
         <title>About Me</title>
         <script>
             function Sum() {
+                if (myform.quantity1.value == '') {
+                    myform.quantity1.value = 0;
+                }
+                if (myform.quantity2.value == '') {
+                    myform.quantity2.value = 0;
+                }
+                if (myform.quantity3.value == '') {
+                    myform.quantity3.value = 0;
+                }
+                if (myform.quantity1.value < 0) {
+                    alert("Quantity 1 must be greater than or equal to 0");
+                    myform.quantity1.value = 0;
+                }
+                if (myform.quantity2.value < 0) {
+                    alert("Quantity 2 must be greater than or equal to 0");
+                    myform.quantity2.value = 0;
+                }
+                if (myform.quantity3.value < 0) {
+                    alert("Quantity 3 must be greater than or equal to 0");
+                    myform.quantity3.value = 0;
+                }
                 var quantity1 = eval(myform.quantity1.value);
                 var quantity2 = eval(myform.quantity2.value);
                 var quantity3 = eval(myform.quantity3.value);
