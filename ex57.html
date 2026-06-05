@@ -15,9 +15,12 @@
                 if (isNaN(quantity3) || quantity3 < 0) {
                     quantity3 = 0;
                 }
-                var total1 = quantity1 * 19.95;
-                var total2 = quantity2 * 29.95;
-                var total3 = quantity3 * 39.95;
+                var price1 = parseFloat(document.getElementById("price1").innerText);
+                var price2 = parseFloat(document.getElementById("price2").innerText);
+                var price3 = parseFloat(document.getElementById("price3").innerText);
+                var total1 = quantity1 * price1;
+                var total2 = quantity2 * price2;
+                var total3 = quantity3 * price3;
                 myform.total1.value = total1 + '$';
                 myform.total2.value = total2 + '$';
                 myform.total3.value = total3 + '$';
@@ -39,21 +42,21 @@
                 <tr>
                     <td id="C112">C112</td>
                     <td>Mouse</td>
-                    <td>19.95$</td>
+                    <td id="price1">19.95$</td>
                     <td><input type="number" name="quantity1"></td>
                     <td><input type="text" name="total1" readonly></td>
                 </tr>
                 <tr>
                     <td id="B124">B124</td>
                     <td>Keyboard US</td>
-                    <td>29.95$</td>
+                    <td id="price2">29.95$</td>
                     <td><input type="number" name="quantity2"></td>
                     <td><input type="text" name="total2" readonly></td>
                 </tr>
                 <tr>
                     <td id="U125">U125</td>
                     <td>USB KingMax</td>
-                    <td>39.95$</td>
+                    <td id="price3">39.95$</td>
                     <td><input type="number" name="quantity3"></td>
                     <td><input type="text" name="total3" readonly></td>
                 </tr>
