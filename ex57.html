@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>About Me</title>
+        <script>
+            function Sum() {
+                var quantity1 = eval(myform.quantity1.value);
+                var quantity2 = eval(myform.quantity2.value);
+                var quantity3 = eval(myform.quantity3.value);
+                var total1 = quantity1 * 19.95;
+                var total2 = quantity2 * 29.95;
+                var total3 = quantity3 * 39.95;
+                myform.total1.value = total1 + '$';
+                myform.total2.value = total2 + '$';
+                myform.total3.value = total3 + '$';
+                var result = total1 + total2 + total3;
+                myform.result.value = result + '$';
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform"> 
+            <table style="text-align: center;">
+                <tr>
+                    <td>Part Number</td>
+                    <td>Description</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Item table</td>
+                </tr>
+                <tr>
+                    <td id="C112">C112</td>
+                    <td>Mouse</td>
+                    <td>19.95$</td>
+                    <td><input type="number" name="quantity1"></td>
+                    <td><input type="text" name="total1" readonly></td>
+                </tr>
+                <tr>
+                    <td id="B124">B124</td>
+                    <td>Keyboard US</td>
+                    <td>29.95$</td>
+                    <td><input type="number" name="quantity2"></td>
+                    <td><input type="text" name="total2" readonly></td>
+                </tr>
+                <tr>
+                    <td id="U125">U125</td>
+                    <td>USB KingMax</td>
+                    <td>39.95$</td>
+                    <td><input type="number" name="quantity3"></td>
+                    <td><input type="text" name="total3" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr><td colspan="5" style="text-align: right;">Total: <input type="text" name="result" readonly></td></tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">
+                        <button style="background-color: orange; color:aliceblue" type="button" name="tổng" onclick="Sum()">Sum</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
